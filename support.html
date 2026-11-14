@@ -1,23 +1,235 @@
 <!DOCTYPE html>
-<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ChargeCheck – Support</title><meta name="description" content="ChargeCheck checks supplier invoices against your agreed prices and shows you every overcharge.">
-<link rel="icon" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><style>body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#f3f4f1;color:#121a17}
-header{background:linear-gradient(135deg,#0b3b2e,#14684f);color:#fff;padding:34px 20px 30px;text-align:center}
-header img{width:84px;height:84px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-header h1{margin:12px 0 0;font-size:28px;letter-spacing:-.02em}header p{margin:6px 0 0;opacity:.85}
-nav{display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.14);font-weight:600;font-size:14px}nav a.on{background:#fff;color:#0b3b2e}
-main{max-width:720px;margin:-14px auto 40px;padding:0 16px}
-section{background:#fff;border-radius:16px;padding:20px 22px;margin-bottom:14px;box-shadow:0 8px 24px rgba(16,24,20,.06);border:1px solid #e6e8e3}
-h2{font-size:19px;margin:0 0 8px}h3{font-size:16px;margin:16px 0 4px}ul{padding-left:20px}a{color:#14684f}
-.small{font-size:13px;color:#68716d}.btn{display:inline-block;background:#14684f;color:#fff!important;text-decoration:none;padding:11px 18px;border-radius:12px;font-weight:700}
-footer{text-align:center;font-size:13px;color:#68716d;padding:0 16px 30px}footer a{color:inherit}
-@media (prefers-color-scheme:dark){body{background:#0b100e;color:#e9eee9}section{background:#141b18;border-color:#25302b}.small,footer{color:#9aa59f}a{color:#5fd0a2}.btn{background:#1f8a69}}</style></head>
-<body><header><img src="icon.png" alt="ChargeCheck icon"><h1>ChargeCheck</h1><p>Invoice Price Checker</p><nav><a href="./" class="">Home</a><a href="support.html" class="on">Support</a><a href="privacy.html" class="">Privacy</a></nav></header>
-<main><section id="support"><h2>Support</h2>
-<p>Need help with ChargeCheck or your subscription? Email <b>RJ</b> at <a href="mailto:r93.hamad@gmail.com">r93.hamad@gmail.com</a> – we usually reply within one working day.</p></section>
-<section><h2>Common questions</h2>
-<h3>How do I cancel or change my subscription?</h3><p>On your iPhone open <b>Settings › your name › Subscriptions</b>, or tap <b>Manage or cancel subscription</b> in the app's Settings. Cancel at least 24 hours before the renewal date.</p>
-<h3>I changed phone – how do I get my subscription back?</h3><p>Open ChargeCheck and tap <b>Restore purchases</b>, signed in with the same Apple ID.</p>
-<h3>How do I move my prices and reports to a new phone?</h3><p>In the app go to <b>Settings › Save backup file</b>, save it to Files or iCloud Drive, then on the new phone choose <b>Settings › Restore backup › Choose a backup file</b>. The app also keeps automatic daily backups in Files › On My iPhone › ChargeCheck.</p>
-<h3>An invoice was read wrongly</h3><p>Take the photo flat, close and in good light, or upload the PDF if your supplier emails one. Anything the app isn't sure about is shown to you to confirm, and you can edit any line.</p>
-<h3>How does the free version work?</h3><p>Watch one short ad to scan one invoice. Subscribers get unlimited scans with no ads.</p></section></main><footer>ChargeCheck © 2026 RJ · <a href="mailto:r93.hamad@gmail.com">r93.hamad@gmail.com</a></footer></body></html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ChargeCheck – Support</title>
+<meta name="description" content="Help with ChargeCheck: scanning invoices, supplier payments, backups, staff and subscriptions. Contact RJ by email.">
+<meta name="theme-color" content="#0b3b2e">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+:root{
+  --green:#14684f;--green-dark:#0b3b2e;--tint:#e8f3ee;
+  --bg:#f2f2f7;--card:#fff;--text:#1c1c1e;--muted:#6c6c70;--line:#e5e5ea;
+  --pro:#8e44ec;--pack:#0a84ff;--orange:#ff9500;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#000;--card:#1c1c1e;--text:#f2f2f7;--muted:#98989f;--line:#2c2c2e;--tint:#12261f;--green:#30c48d}
+}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+a{color:var(--green)}
+header{background:linear-gradient(135deg,#0b3b2e,#14684f);color:#fff;padding:34px 20px 54px;text-align:center}
+header img{width:78px;height:78px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.28)}
+header h1{margin:12px 0 0;font-size:30px;font-weight:800;letter-spacing:-.02em}
+header p{margin:4px 0 0;opacity:.85;font-size:16px}
+nav{display:flex;gap:8px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;padding:7px 15px;border-radius:999px;background:rgba(255,255,255,.15);font-weight:600;font-size:14px}
+nav a.on{background:#fff;color:#0b3b2e}
+main{max-width:720px;margin:-34px auto 30px;padding:0 16px}
+
+/* cards like the app's grouped lists */
+.card{background:var(--card);border-radius:14px;margin-bottom:22px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.pad{padding:18px 18px}
+.label{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.02em;color:var(--muted);margin:0 0 7px 16px}
+.hint{font-size:13px;color:var(--muted);margin:-14px 16px 22px}
+
+/* contact */
+.contact h2{margin:0;font-size:24px;font-weight:800;letter-spacing:-.01em}
+.contact p{margin:6px 0 14px;color:var(--muted)}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:var(--green);color:#fff!important;text-decoration:none;padding:14px 18px;border-radius:12px;font-weight:700;font-size:17px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.facts div{padding:12px 8px;text-align:center;font-size:13px;color:var(--muted)}
+.facts b{display:block;color:var(--text);font-size:15px}
+.facts div+div{border-left:1px solid var(--line)}
+
+/* search */
+.search{display:flex;align-items:center;gap:8px;background:var(--card);border-radius:11px;padding:10px 12px;margin:0 0 22px}
+.search svg{flex:none;opacity:.5}
+.search input{border:0;outline:0;background:transparent;font:inherit;color:var(--text);width:100%}
+
+/* topic tiles */
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:22px}
+.tile{background:var(--card);border-radius:14px;padding:14px;text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:6px}
+.tile .ic{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;color:#fff;font-size:18px}
+.tile b{font-size:15px}.tile span{font-size:13px;color:var(--muted);line-height:1.35}
+
+/* questions: rows with a chevron */
+details{border-top:1px solid var(--line)}
+details:first-of-type{border-top:0}
+summary{list-style:none;cursor:pointer;padding:14px 44px 14px 16px;position:relative;font-weight:600;font-size:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:18px;top:50%;width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+details .a{padding:0 16px 16px;color:var(--text);font-size:15.5px}
+details .a p{margin:0 0 10px}details .a p:last-child{margin:0}
+details .a ol,details .a ul{margin:0 0 10px;padding-left:20px}
+.path{font-weight:600;white-space:nowrap}
+.tag{display:inline-block;font-size:11px;font-weight:800;color:#fff;border-radius:999px;padding:1px 7px;vertical-align:2px}
+.tag.pro{background:var(--pro)}.tag.pack{background:var(--pack)}
+
+/* plans table */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.plans div{padding:14px 12px;font-size:14px}
+.plans div+div{border-left:1px solid var(--line)}
+.plans h3{margin:0 0 6px;font-size:16px}
+.plans ul{margin:0;padding-left:16px;color:var(--muted)}
+.plans li{margin:3px 0}
+
+.empty{display:none;text-align:center;color:var(--muted);padding:20px}
+footer{text-align:center;font-size:13px;color:var(--muted);padding:0 16px 34px}
+footer a{color:inherit}
+@media (max-width:520px){.plans{grid-template-columns:1fr}.plans div+div{border-left:0;border-top:1px solid var(--line)}}
+</style>
+</head>
+<body>
+<header>
+  <img src="icon.png" alt="ChargeCheck icon">
+  <h1>ChargeCheck</h1>
+  <p>Support</p>
+  <nav><a href="./">Home</a><a href="support.html" class="on">Support</a><a href="privacy.html">Privacy</a></nav>
+</header>
+
+<main>
+  <section class="card contact">
+    <div class="pad">
+      <h2>How can we help?</h2>
+      <p>Questions about scanning, your suppliers or your subscription – send us an email and RJ will get back to you.</p>
+      <a class="btn" href="mailto:r93.hamad@gmail.com?subject=ChargeCheck%20support">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Email support
+      </a>
+    </div>
+    <div class="facts">
+      <div><b>1 working day</b>usual reply</div>
+      <div><b>English</b>Arabic · Kurdish</div>
+      <div><b>Email</b>r93.hamad@gmail.com</div>
+    </div>
+  </section>
+  <p class="hint">To help us answer quickly, tell us your iPhone model and, if it's about an invoice, attach a screenshot.</p>
+
+  <label class="search" for="q">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" placeholder="Search help" autocomplete="off">
+  </label>
+
+  <div class="tiles" id="tiles">
+    <a class="tile" href="#scanning"><span class="ic" style="background:#14684f">⌖</span><b>Scanning</b><span>Photos, PDFs and checking prices</span></a>
+    <a class="tile" href="#suppliers"><span class="ic" style="background:#ff9500">⇄</span><b>Suppliers</b><span>Balances, payments and credits</span></a>
+    <a class="tile" href="#plans"><span class="ic" style="background:#8e44ec">★</span><b>Plans</b><span>Free, scan packs and Pro</span></a>
+    <a class="tile" href="#data"><span class="ic" style="background:#0a84ff">⟲</span><b>Your data</b><span>Backups, new phone and staff</span></a>
+  </div>
+
+  <div id="faq">
+  <p class="label" id="scanning">Scanning and checking</p>
+  <section class="card">
+    <details><summary>How do I check an invoice?</summary><div class="a">
+      <ol><li>Add your agreed prices in <span class="path">More › Price list</span> (type them, paste a list or import a spreadsheet).</li>
+      <li>Tap <b>Scan an invoice</b> on Home and take a photo, choose one from Photos, or open a PDF.</li>
+      <li>ChargeCheck compares every line with your prices and shows what you were overcharged.</li></ol>
+      <p>Try the sample invoice in the app first to see how it works.</p></div></details>
+    <details><summary>An invoice was read wrongly</summary><div class="a">
+      <p>Lay the invoice flat, fill the screen, and use good light without shadows. If your supplier emails PDFs, open the PDF instead – it's read exactly.</p>
+      <p>Lines the app isn't sure about are shaded amber. Tap any line to correct it; ChargeCheck remembers how each supplier names an item for next time.</p></div></details>
+    <details><summary>The same item has a different name on each invoice</summary><div class="a">
+      <p>Open the item in <span class="path">More › Price list</span> and add its other names under <b>On invoices as</b>. Every name then matches the same price.</p></div></details>
+    <details><summary>Which languages and currencies can it read?</summary><div class="a">
+      <p>Invoices in English, Arabic, Kurdish, German and French, in £, €, $ or IQD. If a supplier invoices in a different currency from yours, open the supplier and set <b>Invoices in</b> – their amounts are then kept separate and never added to your own currency.</p></div></details>
+    <details><summary>Something was missing from my delivery</summary><div class="a">
+      <p>Open the invoice and tap <b>Check the delivery</b> <span class="tag pack">PACK</span>. Tick off what arrived; anything short is taken off what you pay and added to the credit request for the supplier.</p></div></details>
+    <details><summary>Does ChargeCheck need the internet?</summary><div class="a">
+      <p>No. Invoices are read on your iPhone and checking works offline. The internet is only needed for purchases, ads in the free version, and sharing with staff.</p></div></details>
+  </section>
+
+  <p class="label" id="suppliers">Suppliers and payments</p>
+  <section class="card">
+    <details><summary>How do I record a payment to a supplier?</summary><div class="a">
+      <p>Open <b>Suppliers</b>, tap the supplier and choose <b>Record a payment</b>. Enter any amount, how you paid (cash, transfer, card or cheque), a reference and a photo of the receipt. It pays off their oldest invoices first – or use <b>Pay invoices one by one</b> to choose exactly which.</p></div></details>
+    <details><summary>How do I get money back for an overcharge?</summary><div class="a">
+      <p>Open the invoice and send the credit request – as a message, or as a PDF <span class="tag pack">PACK</span>. When the supplier's credit note arrives, scan it or add it from the supplier's page; it comes off what you owe them.</p></div></details>
+    <details><summary>What is a trusted supplier?</summary><div class="a">
+      <p>For suppliers you don't need to price-check, turn on <b>Trusted</b>. Scanning their invoice just reads the total and adds it to what you owe them.</p></div></details>
+    <details><summary>Can I see when invoices are due?</summary><div class="a">
+      <p>Yes <span class="tag pro">PRO</span>. On the supplier's page set <b>Pay within</b> (for example 30 days). Overdue invoices and the cash you need this week then show on Home.</p></div></details>
+    <details><summary>I deleted something by mistake</summary><div class="a">
+      <p>Invoices, payments and prices you delete stay in <span class="path">More › Recently deleted</span> for 30 days. Swipe right on one to restore it.</p></div></details>
+  </section>
+
+  <p class="label" id="plans">Plans and subscriptions</p>
+  <section class="card">
+    <div class="plans">
+      <div><h3>Free</h3><ul><li>Check invoices – one short ad per scan</li><li>Overcharges and credit requests</li><li>Supplier balances and payments</li><li>Last 30 days of invoices</li></ul></div>
+      <div><h3>Scan packs <span class="tag pack">PACK</span></h3><ul><li>Scans to use any time, no ads</li><li>Full invoice history</li><li>PDFs and exports for your accountant</li><li>Delivery and statement checks</li></ul></div>
+      <div><h3>Pro <span class="tag pro">PRO</span></h3><ul><li>Unlimited scans, no ads</li><li>Money leaks and price-rise alerts</li><li>Supplier scores and due dates</li><li>Several shops, staff and widget</li></ul></div>
+    </div>
+  </section>
+  <section class="card">
+    <details><summary>How do I cancel or change my subscription?</summary><div class="a">
+      <p>On your iPhone open <span class="path">Settings › your name › Subscriptions</span>, choose ChargeCheck, then change or cancel. Cancel at least 24 hours before the renewal date to avoid the next charge. You keep Pro until the end of the period you paid for.</p></div></details>
+    <details><summary>Is there a free trial?</summary><div class="a">
+      <p>Pro starts with a 7-day free trial for new subscribers. If you cancel during the trial you aren't charged.</p></div></details>
+    <details><summary>I changed phone – how do I get my subscription back?</summary><div class="a">
+      <p>Open ChargeCheck, go to the plans screen and tap <b>Restore purchases</b>, signed in with the same Apple ID you subscribed with.</p></div></details>
+    <details><summary>Do scan packs expire?</summary><div class="a">
+      <p>No. Scans you buy stay until you use them, and the pack features stay unlocked for good – even after the scans run out. They move to a new phone with a backup file.</p></div></details>
+    <details><summary>How do I ask for a refund?</summary><div class="a">
+      <p>Purchases are handled by Apple. Request a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, signed in with your Apple ID.</p></div></details>
+  </section>
+
+  <p class="label" id="data">Your data, backups and staff</p>
+  <section class="card">
+    <details><summary>Where are my invoices kept?</summary><div class="a">
+      <p>On your iPhone. ChargeCheck has no account and no server: your invoices, prices and payments never leave your phone unless you share them or turn on staff sharing, which uses your own iCloud. See the <a href="privacy.html">Privacy Policy</a>.</p></div></details>
+    <details><summary>How do I move everything to a new phone?</summary><div class="a">
+      <ol><li>On the old phone open <span class="path">More › Settings › Save backup file</span> and save it to iCloud Drive or Files.</li>
+      <li>On the new phone open <span class="path">More › Settings › Restore backup</span> and choose that file.</li></ol>
+      <p>ChargeCheck also keeps automatic backups for the last 14 days in <span class="path">Files › On My iPhone › ChargeCheck</span>.</p></div></details>
+    <details><summary>Can my staff check invoices on their phones?</summary><div class="a">
+      <p>Yes <span class="tag pro">PRO</span>. Open <span class="path">More › Staff</span> and invite them. Staff scan and check invoices on their own iPhones; everything comes to yours through iCloud. Staff don't see payments or your price list.</p></div></details>
+    <details><summary>How do I delete my data?</summary><div class="a">
+      <p>Delete the app from your iPhone – this removes everything stored by ChargeCheck. Backup files you saved yourself stay in Files until you delete them. If you shared with staff, stop sharing in <span class="path">More › Staff</span> first to remove the shared copy from your iCloud.</p></div></details>
+  </section>
+  </div>
+  <p class="empty" id="empty">Nothing found. <a href="mailto:r93.hamad@gmail.com?subject=ChargeCheck%20support">Email us your question</a>.</p>
+
+  <section class="card pad" style="text-align:center">
+    <b>Still need help?</b>
+    <p style="margin:4px 0 12px;color:var(--muted)">Email RJ at <a href="mailto:r93.hamad@gmail.com?subject=ChargeCheck%20support">r93.hamad@gmail.com</a></p>
+    <p class="small" style="margin:0;font-size:13px;color:var(--muted)"><a href="privacy.html">Privacy Policy</a> · <a href="privacy.html#terms">Terms of Use</a> · <a href="https://apps.apple.com/app/id6832301124">App Store</a></p>
+  </section>
+</main>
+
+<footer>ChargeCheck © 2026 RJ</footer>
+
+<script>
+// Search: shows only the questions that match, and opens them.
+(function(){
+  var q=document.getElementById('q'),faq=document.getElementById('faq'),tiles=document.getElementById('tiles'),empty=document.getElementById('empty');
+  q.addEventListener('input',function(){
+    var words=q.value.toLowerCase().trim().split(/\s+/).filter(Boolean),shown=0;
+    faq.querySelectorAll('section').forEach(function(sec){
+      var any=0;
+      sec.querySelectorAll('details').forEach(function(d){
+        var hit=words.every(function(w){return d.textContent.toLowerCase().indexOf(w)>=0});
+        d.style.display=hit?'':'none';d.open=words.length>0&&hit;if(hit)any++;
+      });
+      var plans=sec.querySelector('.plans');
+      if(plans){var h=words.every(function(w){return plans.textContent.toLowerCase().indexOf(w)>=0});sec.style.display=h?'':'none';if(h)any++}
+      else sec.style.display=any?'':'none';
+      var label=sec.previousElementSibling;
+      while(label&&!label.classList.contains('label'))label=label.previousElementSibling;
+      shown+=any;
+    });
+    faq.querySelectorAll('.label').forEach(function(l){
+      var n=l.nextElementSibling,vis=false;
+      while(n&&n.tagName==='SECTION'){if(n.style.display!=='none')vis=true;n=n.nextElementSibling}
+      l.style.display=vis?'':'none';
+    });
+    tiles.style.display=words.length?'none':'';
+    empty.style.display=shown?'none':'block';
+  });
+})();
+</script>
+</body>
+</html>
