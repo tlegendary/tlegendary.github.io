@@ -1,20 +1,84 @@
 <!DOCTYPE html>
-<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ChargeCheck – Invoice Price Checker</title><meta name="description" content="ChargeCheck checks supplier invoices against your agreed prices and shows you every overcharge.">
-<link rel="icon" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><style>body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#f3f4f1;color:#121a17}
-header{background:linear-gradient(135deg,#0b3b2e,#14684f);color:#fff;padding:34px 20px 30px;text-align:center}
-header img{width:84px;height:84px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-header h1{margin:12px 0 0;font-size:28px;letter-spacing:-.02em}header p{margin:6px 0 0;opacity:.85}
-nav{display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.14);font-weight:600;font-size:14px}nav a.on{background:#fff;color:#0b3b2e}
-main{max-width:720px;margin:-14px auto 40px;padding:0 16px}
-section{background:#fff;border-radius:16px;padding:20px 22px;margin-bottom:14px;box-shadow:0 8px 24px rgba(16,24,20,.06);border:1px solid #e6e8e3}
-h2{font-size:19px;margin:0 0 8px}h3{font-size:16px;margin:16px 0 4px}ul{padding-left:20px}a{color:#14684f}
-.small{font-size:13px;color:#68716d}.btn{display:inline-block;background:#14684f;color:#fff!important;text-decoration:none;padding:11px 18px;border-radius:12px;font-weight:700}
-footer{text-align:center;font-size:13px;color:#68716d;padding:0 16px 30px}footer a{color:inherit}
-@media (prefers-color-scheme:dark){body{background:#0b100e;color:#e9eee9}section{background:#141b18;border-color:#25302b}.small,footer{color:#9aa59f}a{color:#5fd0a2}.btn{background:#1f8a69}}</style></head>
-<body><header><img src="icon.png" alt="ChargeCheck icon"><h1>ChargeCheck</h1><p>Invoice Price Checker</p><nav><a href="./" class="on">Home</a><a href="support.html" class="">Support</a><a href="privacy.html" class="">Privacy</a></nav></header>
-<main><section><h2>Stop paying more than your agreed prices</h2>
-<p>ChargeCheck reads your supplier invoices – photos or PDFs – and compares every line with the prices you agreed. It shows you exactly what you were overcharged, writes the credit request for you, and keeps reports for every shop.</p>
-<ul><li>Scan photo or PDF invoices – read on your iPhone, works offline</li><li>Every invoice double-checked before you see the result</li><li>See how much each supplier overcharged you</li><li>Ready-made credit requests, PDF reports for your accountant</li><li>Your invoices never leave your phone</li></ul>
-<p><a class="btn" href="https://apps.apple.com/app/id6832301124">Download on the App Store</a></p></section>
-<section><h2>Help &amp; privacy</h2><p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a> · <a href="privacy.html#terms">Terms of Use</a></p></section></main><footer>ChargeCheck © 2026 RJ · <a href="mailto:r93.hamad@gmail.com">r93.hamad@gmail.com</a></footer></body></html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ChargeCheck – Invoice Price Checker for shops</title>
+<meta name="description" content="ChargeCheck reads your supplier invoices, checks every line against your agreed prices, and shows every overcharge. Supplier balances, payments and reports, all on your iPhone.">
+<meta name="theme-color" content="#0b3b2e">
+<meta property="og:title" content="ChargeCheck – Invoice Price Checker">
+<meta property="og:description" content="Check every supplier invoice against your agreed prices. Catch every overcharge. Know exactly what you owe.">
+<meta property="og:image" content="https://tlegendary.github.io/icon.png">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header>
+  <img src="icon.png" alt="ChargeCheck icon">
+  <h1>ChargeCheck</h1>
+  <p class="tagline">Stop losing money on supplier invoices.</p>
+  <p>Check every invoice. Catch every overcharge. Know exactly what you owe.</p>
+  <div class="hero-btns">
+    <a class="store" href="https://apps.apple.com/app/id6832301124">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8s-1.8-.8-3-.8C7 7.2 5.6 8.1 4.8 9.5c-1.6 2.8-.4 6.9 1.1 9.2.8 1.1 1.7 2.3 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.3-2.5 1.3-2.6 0 0-2.5-1-2.5-3.6zM14.1 5.7c.6-.8 1.1-1.8 1-2.9-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1 .1 2.1-.5 2.7-1.3z"/></svg>
+      Download on the App Store
+    </a>
+    <a class="ghost" href="support.html">Get help</a>
+  </div>
+  <nav><a href="./" class="on">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+</header>
+
+<main>
+  <section class="card pad" style="text-align:center">
+    <p class="big">Pays for itself</p>
+    <p style="margin:6px 0 0;color:var(--muted)">ChargeCheck finds the money you would otherwise lose: overcharges, short deliveries, duplicate invoices and price rises you didn't agree to.</p>
+  </section>
+
+  <p class="label">How it works</p>
+  <section class="card steps">
+    <div class="row"><span class="ic" style="background:#14684f">₤</span><div><b>Add your agreed prices</b><span>Type them, paste a list or import a spreadsheet. Give an item every name your suppliers use.</span></div></div>
+    <div class="row"><span class="ic" style="background:#0a84ff">⌖</span><div><b>Scan the invoice</b><span>Take a photo, choose one from Photos, or open the PDF your supplier emailed. Read on your iPhone, even offline.</span></div></div>
+    <div class="row"><span class="ic" style="background:#ff9500">!</span><div><b>See every overcharge</b><span>Each line is compared with your price, with the sum shown. Send the supplier a ready-made credit request in one tap.</span></div></div>
+  </section>
+
+  <p class="label">Everything in one app</p>
+  <section class="card">
+    <div class="row"><span class="ic" style="background:#14684f">⌂</span><div><b>Your business in five seconds</b><span>What you owe, what you spent this month, what ChargeCheck caught, and what needs your attention.</span></div></div>
+    <div class="row"><span class="ic" style="background:#ff9500">⇄</span><div><b>Suppliers and payments</b><span>Balances for every supplier, payments by cash, transfer, card or cheque with receipt photos, credit notes, statement checks and due dates.</span></div></div>
+    <div class="row"><span class="ic" style="background:#ff3b30">↗</span><div><b>Price rises and money leaks</b><span>Know straight away when a supplier charges more than last time, and which supplier sells the same item for less.</span></div></div>
+    <div class="row"><span class="ic" style="background:#8e44ec">★</span><div><b>Supplier scores</b><span>A score out of 100 for each supplier: agreed prices, full deliveries, steady prices and invoice accuracy.</span></div></div>
+    <div class="row"><span class="ic" style="background:#0a84ff">▤</span><div><b>Reports for your accountant</b><span>PDF and spreadsheet exports, a monthly summary in plain words, and a supplier report for meetings.</span></div></div>
+    <div class="row"><span class="ic" style="background:#5856d6">⧉</span><div><b>Shops and staff</b><span>Keep several shops apart and compare them. Staff check invoices on their own iPhones and everything comes to yours.</span></div></div>
+  </section>
+
+  <p class="label">Made for real invoices</p>
+  <section class="card pad">
+    <p style="margin:0">Reads invoices in <b>English, Arabic, Kurdish, German and French</b>, in <b>£, €, $ and IQD</b> – any column order, photos or PDFs. Each supplier can have its own currency, and amounts are never mixed. The app itself is available in all five languages, with right-to-left layout for Arabic and Kurdish.</p>
+  </section>
+
+  <p class="label">Plans</p>
+  <section class="card">
+    <div class="plans">
+      <div><h3>Free</h3><ul><li>Check invoices – one short ad per scan</li><li>Overcharges and credit requests</li><li>Supplier balances and payments</li></ul></div>
+      <div><h3>Scan packs <span class="tag pack">PACK</span></h3><ul><li>Scans to use any time, no ads</li><li>Full history, PDFs and exports</li><li>Delivery and statement checks</li></ul></div>
+      <div><h3>Pro <span class="tag pro">PRO</span></h3><ul><li>Unlimited scans, 7-day free trial</li><li>Money leaks, price rises, scores</li><li>Shops, staff and widget</li></ul></div>
+    </div>
+  </section>
+
+  <p class="label">Private by design</p>
+  <section class="card pad">
+    <p style="margin:0">No account and no server. Your invoices, prices and payments stay on your iPhone unless you choose to share them. <a href="privacy.html">Read the Privacy Policy</a>.</p>
+  </section>
+
+  <section class="card toc">
+    <a href="support.html">Support and questions</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="privacy.html#terms">Terms of Use</a>
+    <a href="mailto:r93.hamad@gmail.com?subject=ChargeCheck">Email RJ</a>
+  </section>
+</main>
+
+<footer>ChargeCheck © 2026 RJ · <a href="mailto:r93.hamad@gmail.com">r93.hamad@gmail.com</a></footer>
+</body>
+</html>
